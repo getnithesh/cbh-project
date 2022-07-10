@@ -36,7 +36,7 @@ Feature: Ability to add Custom Id to an Agent by the Facilities based on the wor
 
     Estimate 
         The DB chnages : 2 hours
-        API Changes : 3 hours
+        API Changes : 4 hours
         UI Chnages: 4 hours
         QA: 2 hours
 
@@ -63,6 +63,7 @@ Feature: Ability to add Custom Id to an Agent by the Facilities based on the wor
 
     Acceptance Criteria
         1. When I am generating the shift reports of  my agent I shall be able to see the custom agent if of the agent specific to our facility.
+        2. If the custom agent id is empty show the agent id from database as it works currently.
 
     Technical Approach
          Update the UI of the report in a such way that to use the custome agent id returned from `getShiftsByFacility` as part of the metadata and display the same instead of the agent id.
